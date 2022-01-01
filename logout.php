@@ -1,0 +1,9 @@
+<?php
+    include("connection.php");
+    session_start();
+    if(isset($_SESSION['studentlogin']))
+    {
+        session_destroy();
+        header("location:login.php");
+    }
+?>
